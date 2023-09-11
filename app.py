@@ -9,6 +9,7 @@ def account():
     form = UpdateAccountDetailsForm()
     if form.validate_on_submit():
         current_user.username = form.username.data
+        #comment
         current_user.email = form.email.data
         current_user.password = form.password.data
         current_user.year_group = form.year_group.data
